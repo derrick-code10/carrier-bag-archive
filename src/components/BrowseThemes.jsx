@@ -2,7 +2,6 @@ import data from "../data/data.json";
 
 export default function BrowseThemes({ onThemeClick }) {
   const handleCardClick = (themeCard) => {
-    // Scroll to main archive with offset
     const archiveSection = document.getElementById("main-archive");
     if (archiveSection) {
       const offset = 80;

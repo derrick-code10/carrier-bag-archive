@@ -54,7 +54,7 @@ export default function CarrierBag({
         {objects.map((obj, index) => {
           const initialAngle = (index / objects.length) * 360;
           const radius = 220;
-          const duration = 15 + index * 0.5; // Vary speed slightly per object
+          const duration = 15 + index * 0.5;
           const isHighlighted = highlightedObjectIds.includes(obj.id);
 
           return (

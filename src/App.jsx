@@ -12,16 +12,12 @@ function App() {
   const objects = data.objects.filter((obj) => obj.id !== "rusted-house-key");
   const backgroundAudioRef = useRef(null);
 
-  // Manage background audio based on view state
   useEffect(() => {
     if (backgroundAudioRef.current) {
       if (selectedObject) {
-        // Pause background audio when viewing a story
         backgroundAudioRef.current.pause();
       } else {
-        // Play/resume background audio on main site (including initial load)
         backgroundAudioRef.current.play().catch((error) => {
-          // Handle autoplay restrictions - user interaction may be required
           console.log("Audio autoplay prevented:", error);
         });
       }
@@ -34,7 +30,6 @@ function App() {
 
   const handleCloseStory = () => {
     setSelectedObject(null);
-    // Scroll back to archive section
     setTimeout(() => {
       const archiveSection = document.getElementById("main-archive");
       if (archiveSection) {
@@ -45,13 +40,11 @@ function App() {
 
   const handleThemeClick = (themeCard) => {
     setHighlightedTheme(themeCard.id);
-    // Clear highlight after 3 seconds
     setTimeout(() => {
       setHighlightedTheme(null);
     }, 3000);
   };
 
-  // If an object is selected, show story view instead of main content
   if (selectedObject) {
     return (
       <div className="min-h-screen">

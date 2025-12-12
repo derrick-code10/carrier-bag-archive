@@ -7,29 +7,25 @@ export default function StoryView({ object, objects, onClose, onObjectClick }) {
   const storyAudioRef = useRef(null);
 
   useEffect(() => {
-    // Scroll to top when story view opens
     window.scrollTo({ top: 0, behavior: "smooth" });
 
-    // Play story audio when viewing an object
-    if (storyAudioRef.current) {
-      storyAudioRef.current.play().catch((error) => {
-        // Handle autoplay restrictions
+    const audioElement = storyAudioRef.current;
+    if (audioElement) {
+      audioElement.play().catch((error) => {
         console.log("Audio autoplay prevented:", error);
       });
     }
 
-    // Cleanup: pause audio when component unmounts
     return () => {
-      if (storyAudioRef.current) {
-        storyAudioRef.current.pause();
-        storyAudioRef.current.currentTime = 0;
+      if (audioElement) {
+        audioElement.pause();
+        audioElement.currentTime = 0;
       }
     };
   }, [object]);
 
   if (!object) return null;
 
-  // Find similar objects (same theme)
   const getSimilarObjects = () => {
     const themeCard = data.themeCards.find((theme) =>
       theme.objectIds.includes(object.id)
@@ -42,7 +38,6 @@ export default function StoryView({ object, objects, onClose, onObjectClick }) {
 
   const similarObjects = getSimilarObjects();
 
-  // Find the cluster for navigation context
   const getCluster = () => {
     return data.archiveIndex.clusters.find((cluster) =>
       cluster.objectIds.includes(object.id)
@@ -74,7 +69,6 @@ export default function StoryView({ object, objects, onClose, onObjectClick }) {
       <div className="max-w-6xl mx-auto px-6 py-12 md:py-16">
         {/* Main Content - Side by side layout */}
         <div className="flex flex-col lg:flex-row gap-8 md:gap-12 mb-16">
-          {/* Left Side - Image */}
           <div className="w-full lg:w-1/2 sticky top-24">
             <img
               src={getObjectImage(object.id)}
@@ -83,7 +77,6 @@ export default function StoryView({ object, objects, onClose, onObjectClick }) {
             />
           </div>
 
-          {/* Right Side - Content */}
           <div className="w-full lg:w-1/2 flex flex-col">
             {/* Title */}
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 text-(--black-ink)">
@@ -149,7 +142,6 @@ export default function StoryView({ object, objects, onClose, onObjectClick }) {
                 </div>
               </div>
 
-              {/* Cluster info if available */}
               {cluster && (
                 <div>
                   <span className="text-(--soft-soil) font-medium text-sm block mb-2">
@@ -164,7 +156,6 @@ export default function StoryView({ object, objects, onClose, onObjectClick }) {
           </div>
         </div>
 
-        {/* Similar Objects Section */}
         {similarObjects.length > 0 && (
           <div className="border-t border-(--fungal-gray) pt-12">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-(--black-ink) mb-6">
@@ -208,7 +199,6 @@ export default function StoryView({ object, objects, onClose, onObjectClick }) {
           </div>
         )}
 
-        {/* Bottom Navigation */}
         <div className="mt-16 pt-8 border-t border-(--fungal-gray) flex flex-col sm:flex-row gap-4 justify-between items-center">
           <button
             onClick={onClose}
