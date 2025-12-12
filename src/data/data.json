@@ -1,0 +1,287 @@
+{
+  "hero": {
+    "title": "Carrier Bag Archive · 2057",
+    "subtitle": "A small, living memorial of objects gathered after the climate storms and relocations of the 2030s–2040s. Each object holds a story about how communities, species, and technologies learned to live together differently.",
+    "buttons": [
+      { "label": "Enter Archive", "action": "scrollToArchive" },
+      { "label": "Browse by Theme", "action": "scrollToThemes" }
+    ]
+  },
+  "archiveIndex": {
+    "title": "Index",
+    "clusters": [
+      {
+        "id": "familiar-objects",
+        "name": "Familiar Objects",
+        "tags": ["memory", "displacement"],
+        "objectIds": [
+          "faded-bus-ticket-2034",
+          "rusted-house-key",
+          "childs-bird-drawing",
+          "preserved-tidewater-bottle"
+        ]
+      },
+      {
+        "id": "living-companions",
+        "name": "Living Companions",
+        "tags": ["multispecies", "kin-making"],
+        "objectIds": [
+          "feather",
+          "bees-wax-seal",
+          "indigenous-seed",
+          "smell-path-map"
+        ]
+      },
+      {
+        "id": "future-tools",
+        "name": "Future Tools",
+        "tags": ["post-extractivism", "community-tech"],
+        "objectIds": ["moss-grown-solar-tile", "whistle-shell"]
+      }
+    ]
+  },
+  "themeCards": [
+    {
+      "id": "memory-displacement",
+      "name": "Memory & Displacement",
+      "description": "Traces of homes, routes and coastlines that shifted or disappeared during the storms and relocations.",
+      "objectIds": [
+        "faded-bus-ticket-2034",
+        "rusted-house-key",
+        "childs-bird-drawing",
+        "preserved-tidewater-bottle"
+      ]
+    },
+    {
+      "id": "multispecies-companions",
+      "name": "Shared Lives",
+      "description": "Objects that record relationships between humans and other species, and shared ways of living.",
+      "objectIds": [
+        "feather",
+        "bees-wax-seal",
+        "indigenous-seed",
+        "smell-path-map"
+      ]
+    },
+    {
+      "id": "post-extractive-tools",
+      "name": "Post-Extractive Tools",
+      "description": "Simple and hybrid tools that supported care, warning and repair after extractive systems failed.",
+      "objectIds": ["moss-grown-solar-tile", "whistle-shell"]
+    }
+  ],
+  "objects": [
+    {
+      "id": "bees-wax-seal",
+      "name": "Bee’s Wax Seal",
+      "clusterId": "living-companions",
+      "themeCardId": "multispecies-companions",
+      "approxYear": 2042,
+      "regionLabel": "South Valley Cooperative Farm",
+      "label": "Bee’s Wax Seal · 2042 · South Valley Cooperative Farm",
+      "shortTagline": "A small wax seal from early pollinator human planting agreements.",
+      "story": "The wax still holds the faint scent of wildflowers and old smoke. Its surface carries the imprint of a bee wing, pressed there when people sealed shared seed packets during the recovery years. The edges are uneven from being handled many times in warm weather. When held in the palm, the wax softens slightly, almost as if it remembers past summers.\n\nSmall grains of pollen cling to the grooves of the imprint. They shine a little under strong light. The seal once traveled between farms where people worked beside pollinators and shaped planting cycles around their needs. It carries a record of quiet cooperation, stored in smell and texture rather than words.\n\nIf you tilt it gently, the light catches the wing pattern and makes it look like something still in motion.",
+      "metadata": {
+        "collectedBy": "Mara Iluk",
+        "yearCollected": 2054,
+        "region": "South Valley Cooperative Farm",
+        "themes": [
+          "multispecies cooperation",
+          "pollination",
+          "care",
+          "agreements"
+        ]
+      }
+    },
+    {
+      "id": "faded-bus-ticket-2034",
+      "name": "Faded Bus Ticket from 2034",
+      "clusterId": "familiar-objects",
+      "themeCardId": "memory-displacement",
+      "approxYear": 2034,
+      "regionLabel": "Old Riverside Floodplain",
+      "label": "Faded Bus Ticket · 2034 · Old Riverside Floodplain",
+      "shortTagline": "A nearly unreadable ticket from a bus route that once ran along a drowned shoreline.",
+      "story": "The paper is almost weightless. Most of the ink has dissolved into a soft gray wash. Only part of the route number remains, curling at the edges like it is trying to hold onto a place that no longer exists. The ticket stiffened as the floodplain dried, and thin cracks now run through the center.\n\nBits of silt press into the fibers, giving the paper a slight grainy texture. The route once linked two shoreline neighborhoods where people waited for buses without checking the tide. After the storms, the road slid under water, and the ticket drifted through mud and reeds before settling in the open.\n\nWhen light passes through the faded paper, the old route becomes visible for a moment, like a memory surfacing and then fading again.",
+      "metadata": {
+        "collectedBy": "Kei Min",
+        "yearCollected": 2052,
+        "region": "Old Riverside Floodplain",
+        "themes": ["memory", "displacement", "infrastructure", "slow violence"]
+      }
+    },
+    {
+      "id": "childs-bird-drawing",
+      "name": "Child’s Drawing of a Bird",
+      "clusterId": "familiar-objects",
+      "themeCardId": "memory-displacement",
+      "approxYear": 2040,
+      "regionLabel": "Eastern Wetlands Corridor",
+      "label": "Child’s Bird Drawing · 2040 · Eastern Wetlands Corridor",
+      "shortTagline": "A wax-preserved drawing of a bird carried through relocation.",
+      "story": "The paper carries the marks of travel. It is wrinkled, softened by moisture, and coated in a thin layer of wax that gives it a gentle shine. The bird in the center is drawn in blue pencil with a steady hand. It has long legs and a curved neck, like the herons that still move through the wetlands.\n\nWax sealed the drawing during a relocation, keeping the colors from running during storms. Small bubbles sit under the surface where the wax cooled unevenly. The edges are folded from being held close against the body of the child who made it.\n\nEven now, the drawing has a quiet warmth. When tilted, the wax catches the light and makes the bird look like it is lifting its wings.",
+      "metadata": {
+        "collectedBy": "Arin Sol",
+        "yearCollected": 2046,
+        "region": "Eastern Wetlands Relocation Route",
+        "themes": ["childhood", "memory", "relocation", "art"]
+      }
+    },
+    {
+      "id": "moss-grown-solar-tile",
+      "name": "Moss-Grown Solar Tile Fragment",
+      "clusterId": "future-tools",
+      "themeCardId": "post-extractive-tools",
+      "approxYear": 2041,
+      "regionLabel": "Hilltop Solar Forest",
+      "label": "Solar Tile Fragment · 2041 · Hilltop Solar Forest",
+      "shortTagline": "A cracked solar tile slowly claimed by moss and insects.",
+      "story": "The tile fragment is cool on one side and warm on the other. The surface is cracked, and thin lines of green moss run across it like delicate threads. The moss settled in the fractures after years of fog and rain, turning the hard tile into something that feels partly alive.\n\nTiny insects shelter in the grooves. Their movements leave faint trails of dust on the glassy side of the fragment. The tile once powered an emergency shelter, but now it holds the story of how plants and old infrastructure merged in unexpected ways.\n\nIf you brush your thumb lightly over the surface, the moss bends and then slowly rises again, as if continuing a quiet negotiation with the material beneath it.",
+      "metadata": {
+        "collectedBy": "Javi Ren",
+        "yearCollected": 2055,
+        "region": "Hilltop Solar Forest",
+        "themes": [
+          "post-extractive futures",
+          "techno-ecologies",
+          "repair",
+          "habitat"
+        ]
+      }
+    },
+    {
+      "id": "preserved-tidewater-bottle",
+      "name": "Bottle of Preserved Tidewater",
+      "clusterId": "familiar-objects",
+      "themeCardId": "memory-displacement",
+      "approxYear": 2040,
+      "regionLabel": "Northern Shore Retreat Zone",
+      "label": "Tidewater Bottle · 2040 · Northern Shore Retreat Zone",
+      "shortTagline": "A sealed bottle of water from a shoreline that no longer exists.",
+      "story": "The small bottle holds cloudy water that moves slowly when shaken. Sediment settles at the bottom in thin layers of brown and gray. When held to the light, you can see tiny silver lines drifting inside. They come from microplastic fragments carried inland during the worst storms.\n\nThe water carries the smell of salt and damp wood. A few air bubbles cling to the glass where the bottle was sealed. The shoreline where this water came from no longer exists, and the bottle now contains both memory and matter from a place that was gradually taken by the tide.\n\nWhen sunlight hits the bottle, the water reflects a soft shimmer, like the surface of the old coastline returning for a moment.",
+      "metadata": {
+        "collectedBy": "Nara Thao",
+        "yearCollected": 2053,
+        "region": "Northern Shore Retreat Zone",
+        "themes": ["sea level rise", "memory", "waste", "ocean"]
+      }
+    },
+    {
+      "id": "feather",
+      "name": "Feather",
+      "clusterId": "living-companions",
+      "themeCardId": "multispecies-companions",
+      "approxYear": 2050,
+      "regionLabel": "Eastern Migration Corridor",
+      "label": "Feather · 2050 · Eastern Migration Corridor",
+      "shortTagline": "A small feather left along a shifting migration path.",
+      "story": "The feather is light enough to move with the slightest breath of air. Its gray surface darkens toward the tip, and the barbs are neatly aligned except for one out of place. Rain washed it clean before it settled on the migration path.\n\nIf you run a finger along the spine, you feel how firm it still is. The feather carries traces of wind patterns and distance traveled. The species it came from began shifting routes years ago, adjusting to new seasons and unfamiliar temperatures.\n\nWhen the feather lies still, it holds a quiet shape of movement, almost like it is waiting for the next gust to tell it where to go.",
+      "metadata": {
+        "collectedBy": "Liri Annum",
+        "yearCollected": 2056,
+        "region": "Eastern Migration Corridor",
+        "themes": [
+          "migration",
+          "climate adaptation",
+          "animal movement",
+          "observation"
+        ]
+      }
+    },
+    {
+      "id": "indigenous-seed",
+      "name": "Indigenous Seed",
+      "clusterId": "living-companions",
+      "themeCardId": "multispecies-companions",
+      "approxYear": 2020,
+      "regionLabel": "Aniwa Ancestral Seed Bank",
+      "label": "Indigenous Seed · 2020 · Aniwa Ancestral Seed Bank",
+      "shortTagline": "A seed carrying ancestral instructions for living with land.",
+      "story": "The seed is smooth in some places and textured in others. Thin lines cover the surface like marks made by careful hands. It has lived through many kinds of storage, from warm pockets to cool clay pots. The seed rests with a steady weight, small but full of possibility.\n\nIts deep brown color holds a kind of warmth, as if shaped by long seasons of sun and soil. People say the seed carries instructions that are not written but remembered across generations. When placed in the palm, it seems to lean slightly toward the light, though this is only the effect of its rounded shape.\n\nThe seed stays still, but something about its form suggests patience. It seems to wait for the right moment.",
+      "metadata": {
+        "collectedBy": "Aniwa Stewardship Council",
+        "yearCollected": 2051,
+        "region": "Aniwa Territory",
+        "themes": [
+          "ancestral knowledge",
+          "food sovereignty",
+          "long-term resilience",
+          "land relations"
+        ]
+      }
+    },
+    {
+      "id": "smell-path-map",
+      "name": "Handwoven Map of Smell Paths",
+      "clusterId": "living-companions",
+      "themeCardId": "multispecies-companions",
+      "approxYear": 2053,
+      "regionLabel": "Western Range",
+      "label": "Smell-Path Map · 2053 · Western Range",
+      "shortTagline": "A woven map of routes shaped by animal scent and seasonal winds.",
+      "story": "The map has a subtle scent that lingers in the air. The fibers were dyed with crushed berries, minerals and herbs that animals once followed in the Western Range. Some strands feel rough while others are smooth from repeated handling.\n\nLines on the map curve in gentle arcs, marking routes used by wolves, deer and smaller mammals. The colors shift when the map is moved in the light, showing changes in terrain and seasonal winds. There are no borders on the map and no straight roads. It records motion shaped by scent, memory and shelter.\n\nIf you bring the map closer, the smell of soil becomes stronger. It holds the presence of animals that moved long before the map was woven.",
+      "metadata": {
+        "collectedBy": "Orion Hale",
+        "yearCollected": 2055,
+        "region": "Western Range Field School",
+        "themes": ["umwelt", "animal sensing", "coexistence", "field learning"]
+      }
+    },
+    {
+      "id": "whistle-shell",
+      "name": "Whistle Shell",
+      "clusterId": "future-tools",
+      "themeCardId": "post-extractive-tools",
+      "approxYear": 2042,
+      "regionLabel": "South Coast Watch Network",
+      "label": "Whistle Shell · 2042 · South Coast Watch",
+      "shortTagline": "A shell used as a low-tech warning tool during coastal storms.",
+      "story": "The shell fits easily in the hand. Its hollow center creates a sharp sound when air moves through it. Grains of sand sit deep in its folds, and the outer surface is scratched from years of use during storms.\n\nPeople once used this shell to warn about rising tides and broken levees. The sound carried far across the water, especially at night when the wind was steady. The shell feels worn smooth in the places where fingers gripped it tightly during emergency calls.\n\nWhen held to the ear, you can still hear a faint echo of wind inside the shell, almost like a leftover note from the days when it guided entire neighborhoods.",
+      "metadata": {
+        "collectedBy": "Rio Maro",
+        "yearCollected": 2054,
+        "region": "South Coast Watch Network",
+        "themes": ["community warning", "simple tools", "storms", "mutual aid"]
+      }
+    },
+    {
+      "id": "rusted-house-key",
+      "name": "Rusted House Key",
+      "clusterId": "familiar-objects",
+      "themeCardId": "memory-displacement",
+      "approxYear": 2039,
+      "regionLabel": "Shoreline Zone",
+      "label": "Rusted House Key · 2039 · Shoreline Zone",
+      "shortTagline": "A key from a house lost during the shoreline storms.",
+      "story": "The key is heavy for its size. Rust covers most of the metal, spreading in uneven patches that turn orange when the light hits them. Salt crystals sit inside the grooves where the teeth have worn down. The key must have been underwater for a long time before settling in the sand.\n\nWhen the storms destroyed the shoreline homes, pieces like this drifted between tides. The outline of the house number is still faintly visible. If you tilt the key, the last traces of it appear for a second before blending back into the rust. Small strands of seaweed dried onto the handle, leaving thin brown marks against the metal.\n\nThe key feels cold at first, but it warms slowly when held. It carries a memory of a door that no longer stands and a neighborhood that slipped into the ocean one year at a time. Sometimes, when the room is quiet, you can hear a soft flake of rust fall away from its edge.",
+      "metadata": {
+        "collectedBy": "Lani Oro",
+        "yearCollected": 2052,
+        "region": "Northern Shoreline Zone",
+        "themes": ["home", "displacement", "coastline loss", "slow change"]
+      }
+    }
+  ],
+  "scrollyStrip": {
+    "enabled": true,
+    "background": "coastline-faded",
+    "lines": [
+      {
+        "year": 2034,
+        "text": "The first buses stop running to the old shoreline neighborhood."
+      },
+      {
+        "year": 2039,
+        "text": "Storms level most of the houses along the coast."
+      },
+      {
+        "year": 2045,
+        "text": "A child returns with a key and a drawing wrapped in wax paper."
+      },
+      {
+        "year": 2057,
+        "text": "The objects enter the archive, not as nostalgia, but as lessons in how to live differently."
+      }
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+/* Custom Color Palette - Era of Mutual Maintenance */
+:root {
+  --moss-green: #6b7f5a;
+  --tidewater-blue: #7ca8a8;
+  --driftwood-tan: #cfc6b8;
+  --wax-amber: #d7a96f;
+  --rust-iron: #a05a4a;
+  --fungal-gray: #e7e8e4;
+  --black-ink: #222222;
+  --soft-soil: #928b81;
+  --cloud-white: #f9f7f4;
+}
+
+@theme {
+  --color-moss-green: var(--moss-green);
+  --color-tidewater-blue: var(--tidewater-blue);
+  --color-driftwood-tan: var(--driftwood-tan);
+  --color-wax-amber: var(--wax-amber);
+  --color-rust-iron: var(--rust-iron);
+  --color-fungal-gray: var(--fungal-gray);
+  --color-black-ink: var(--black-ink);
+  --color-soft-soil: var(--soft-soil);
+  --color-cloud-white: var(--cloud-white);
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-handwritten: "Caveat", cursive;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  color: var(--black-ink);
+  background-color: var(--cloud-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Utility classes for custom fonts */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-handwritten {
+  font-family: var(--font-handwritten);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Orbital animation improvements */
+.orbit-container {
+  transform-origin: center;
+}
+
+.orbit-wrapper {
+  transform-origin: center;
+}
+
+/* Pulse glow animation for highlighted objects */
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(107, 127, 90, 0.3),
+      0 0 20px rgba(107, 127, 90, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(107, 127, 90, 0.6),
+      0 0 30px rgba(107, 127, 90, 0.4);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 1.5s ease-in-out infinite;
+}
+
+/* Fade in animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
+}
