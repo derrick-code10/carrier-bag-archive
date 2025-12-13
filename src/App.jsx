@@ -9,7 +9,7 @@ import audio1 from "./assets/audio1.mp3";
 function App() {
   const [selectedObject, setSelectedObject] = useState(null);
   const [highlightedTheme, setHighlightedTheme] = useState(null);
-  const objects = data.objects.filter((obj) => obj.id !== "rusted-house-key");
+  const objects = data.objects;
   const backgroundAudioRef = useRef(null);
 
   useEffect(() => {
